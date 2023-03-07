@@ -1,0 +1,144 @@
+{
+  "index": "index.ejs",
+  "notfound": "404.ejs",
+  "nopermission": "403.ejs",
+  "redirect": {
+    "callback": "/dashboard",
+    "failedcallback": "/",
+    "logout": "/",
+    "deleteserver": "/servers",
+    "updateservers": "/dashboard",
+    "createserver": "/servers",
+    "failedcreateserver": "/servers/new",
+    "modifyserver": "/servers",
+    "failedmodifyserver": "/servers/edit",
+    "setplan": "/admin",
+    "failedsetplan": "/admin",
+    "getip": "/admin",
+    "failedgetip": "/admin",
+    "createserverdisabled": "/servers?err=disabled",
+    "modifyserverdisabled": "/servers?err=disabled",
+    "deleteserverdisabled": "/servers?err=disabled",
+    "regenpassword": "/dashboard",
+    "setresources": "/admin",
+    "failedsetresources": "/admin",
+    "giftresources": "/gift",
+    "failedgiftresources": "/gift",
+    "renewserver": "/servers",
+    "failedrenewserver": "/servers",
+    "setcoins": "/admin",
+    "failedsetcoins": "/admin",
+    "purchaseram": "/store",
+    "failedpurchaseram": "/store",
+    "purchasedisk": "/store",
+    "failedpurchasedisk": "/store",
+    "purchasecpu": "/store",
+    "failedpurchasecpu": "/store",
+    "purchaseservers": "/store",
+    "failedpurchaseservers": "/store",
+    "arcioerror": "/dashboard",
+    "missingorinvalidcouponcode": "/redeem",
+    "successfullyredeemedcoupon": "/redeem",
+    "couponcreationfailed": "/admin",
+    "couponcreationsuccess": "/admin",
+    "couponrevokefailed": "/admin",
+    "couponrevokesuccess": "/admin",
+    "removeaccountfailed": "/admin",
+    "removeaccountsuccess": "/admin"
+  },
+  "pages": {
+    "dashboard": "dashboard.ejs",
+    "servers": "servers.ejs",
+    "servers/new": "create.ejs",
+    "servers/edit": "edit.ejs",
+    "admin": "admin.ejs",
+    "store": "store.ejs",
+    "afk": "arcio.ejs",
+    "redeem": "redeem.ejs",
+    "aboutus": "aboutus.ejs", 
+    "403":"403.ejs",
+    "version":"version.ejs",
+    "gift":"gift.ejs",
+    "j4r": "j4r.ejs",
+    "tos": "TOS.ejs",
+    "pp": "pp.ejs",
+    "test": "t.ejs",
+    "status":"status.ejs",
+    "maintenance": "maintenance.ejs"
+        
+  },
+  "mustbeloggedin": [
+    "/dashboard",
+    "/servers",
+    "/servers/new",
+    "/servers/edit",
+    "/store",
+    "/afk",
+    "/redeem",
+    "/gift",
+    "/j4r",
+    "/status"
+  ],
+  "mustbeadmin": [
+    "/admin"
+    
+
+  ],
+  "generateafktoken": [
+    "/afk"
+  ],
+  "variables": {
+    "footerad": true,
+    "faviconlink": "https://media.discordapp.net/attachments/1056945635074527293/1082342762705326131/pterodactyl.png",
+    "name": "MineCube",
+    "home": {
+      "title": "MineCube",
+      "buttontext": {
+        "loggedin": {
+          "text": "MineCube",
+          "link": "/dashboard"
+        },
+        "loggedout": {
+          "_note": "This below supports HTML encoding.",
+          "text": "<img src=\"https://i.imgur.com/EYGXn9D.png\" width=\"25\" /> Login with Discord",
+          "link": "/login"
+        }
+      }
+    },
+      "dashboard": {
+        "title": "Dashboard - MineCube"
+      },
+    "servers": {
+      "title": {
+        "create": "servers - MineCube",
+        "modify": "Server Modify - MineCube"
+      }
+    },
+    "error": {
+      "title": "404 - MineCube"
+    },
+    "admin": {
+      "title": {
+        "default": "Admin - MineCube"
+      }
+    },
+    "store": {
+      "title": "Store - MineCube"
+    },
+    "arcio": {
+      "title": "AFK - MineCube"
+    },
+    "maintenance": {
+      "title": "Downtime - MineCube" 
+    },
+    "redeem": {
+      "title": "Redeem - MineCube"
+    },
+    "j4r": {
+      "tittle": "Join for Resources - MineCube"
+    },
+    "gift": {
+      "tittle": "Gift Resources - MineCube"
+    }
+  }
+}
